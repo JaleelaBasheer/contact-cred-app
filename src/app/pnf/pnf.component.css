@@ -1,0 +1,15 @@
+.pnf{
+    width: 100%;
+    height: 500px;
+    background: url(https://img.freepik.com/free-vector/page-found-concept-illustration_114360-1869.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+
+}
+button{
+    background-color: rgb(3, 60, 3);
+    color: aliceblue;
+    border-radius: 8px;
+}

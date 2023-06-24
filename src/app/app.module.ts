@@ -3,14 +3,34 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AllContactsComponent } from './all-contacts/all-contacts.component';
+import { AddContactComponent } from './add-contact/add-contact.component';
+import { EditContactComponent } from './edit-contact/edit-contact.component';
+import { ViewContactComponent } from './view-contact/view-contact.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { PnfComponent } from './pnf/pnf.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AllContactsComponent,
+    AddContactComponent,
+    EditContactComponent,
+    ViewContactComponent,
+    HeaderComponent,
+    FooterComponent,
+    PnfComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
